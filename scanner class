@@ -1,0 +1,35 @@
+import java.util.*;
+class mail_id
+{
+    public static void main(String args[])
+    {
+        int i,j,count=0;
+        Scanner obj=new Scanner(System.in);
+        System.out.print("string:");
+        String a=obj.nextLine();
+        System.out.print("string:");
+        String b=obj.nextLine();
+        int c=a.length();
+        int d=b.length();
+        for(i=0;i<c;i++)
+        {
+            for(j=0;j<d;j++)
+            {
+                if(i==j)
+                {
+                    count++;
+                }
+            }
+        }
+        if(c==count)
+        {
+            System.out.print("valid");
+        }
+        else
+        {
+            System.out.println("invalid");
+        }
+    }
+}
+//jjohn123@sse.com
+//john123@sse.com
