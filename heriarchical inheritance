@@ -1,0 +1,42 @@
+class gparent
+{
+    void methodgparent()
+    {
+        System.out.println("I AM A GRAND PARENT");
+    }
+}
+class parent extends gparent
+{
+    void methodparent()
+    {
+        System.out.println("T AM THE  PARENT");
+    }
+}
+class child extends gparent
+{
+    void methodchild()
+    {
+        System.out.println("I AM A CHILD");
+    }
+}
+class daughter extends gparent
+{
+    void methoddaughter()
+    {
+        System.out.println("I AM A DAUGHTER");
+    }
+}
+ public class family
+{
+    public static void main(String[] args)
+    {
+        gparent p=new gparent();
+        parent p1=new parent();
+        child p2=new child();
+        daughter p3=new daughter();
+        p.methodgparent();
+        p1.methodparent();
+        p2.methodchild();
+        p3.methoddaughter();
+    }
+}
